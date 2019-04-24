@@ -28,12 +28,12 @@ h1 {
 }
 
 h2 {
-  font-size: 6.8vw;
+  font-size: 6vw;
   line-height: 1.5;
 }
 
 p {
-  font-size: 4.8vw;
+  font-size: 4vw;
   line-height: 1.7;
 }
 
@@ -72,6 +72,14 @@ img {
   margin: 0 auto;
 }
 
+#lang-icons li {
+  display: inline;
+}
+
+#lang-icons li i {
+  font-size: 10vw;
+}
+
 .page-footer {
   position: relative;
   top: 100vh;
@@ -97,6 +105,10 @@ img {
 
   p {
     font-size: 2.2vw;
+  }
+
+  #lang-icons li i {
+    font-size: 5vw;
   }
 }
 
@@ -125,6 +137,10 @@ img {
 
   p {
     font-size: 1.25vw;
+  }
+
+  #lang-icons li i {
+    font-size: 5vw;
   }
 }
 
