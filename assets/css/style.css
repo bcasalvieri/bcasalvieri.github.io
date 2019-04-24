@@ -72,6 +72,11 @@ img {
   margin: 0 auto;
 }
 
+footer {
+  position: relative;
+  top: 100vh;
+}
+
 @media only screen and (min-width: 601px) and (max-width: 992px) {
   .page-wrapper {
     width: 90%;
