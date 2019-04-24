@@ -4,6 +4,11 @@ body {
   font-family: 'Lora', serif;
 }
 
+.fixed-action-btn {
+  bottom: 45px;
+  right: 35px;
+}
+
 .page-wrapper {
   width: 95%;
   margin: 0 auto;
@@ -100,7 +105,7 @@ img {
   }
 
   img {
-    width: 2git0vw;
+    width: 20vw;
   }
 
   h2 {
