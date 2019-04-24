@@ -5,7 +5,7 @@ body {
 }
 
 .page-wrapper {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -15,17 +15,20 @@ body {
 }
 
 h1 {
-  font-size: 8vw;
+  font-size: 16.5vw;
   letter-spacing: 0.2rem;
   margin: 0;
+  display: inline;
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 6vw;
+  line-height: 1.5;
 }
 
 p {
-  font-size: 1.25vw;
+  font-size: 4vw;
+  line-height: 1.7;
 }
 
 .row {
@@ -34,7 +37,6 @@ p {
 
 .name {
   position: fixed;
-  width: 40%;
   font-family: 'Patua One', cursive;
 }
 
@@ -43,6 +45,8 @@ p {
   top: 100vh;
   text-align: justify;
   padding-bottom: 10vh;
+  background-image: url(../images/ep_naturalblack.png);
+  background-attachment: fixed;
 }
 
 .icons {
@@ -57,6 +61,11 @@ i {
 
 img {
   border-radius: 50%;
-  width: 40%;
-  margin-left: 28%;
+  width: 60vw;
+  display: block;
+  margin: 0 auto;
+}
+
+#portfolio-btn {
+  color: white;
 }
