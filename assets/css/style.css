@@ -4,10 +4,10 @@ body {
   font-family: 'Lora', serif;
 }
 
-/* .page-wrapper {
-  width: 85%;
+.page-wrapper {
+  width: 95%;
   margin: 0 auto;
-} */
+}
 
 #left-column,
 #right-column {
@@ -66,7 +66,12 @@ img {
   margin: 0 auto;
 }
 
-@media (max-width: 992px) and (min-width: 601px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .page-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   h1 {
     font-size: 7.8vw;
   }
@@ -83,3 +88,27 @@ img {
     font-size: 2.2vw;
   }
 }
+
+@media only screen and (min-width: 993px) {
+  .page-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 7.8vw;
+  }
+
+  img {
+    width: 2git0vw;
+  }
+
+  h2 {
+    font-size: 2.5vw;
+  }
+
+  p {
+    font-size: 1.25vw;
+  }
+}
+
