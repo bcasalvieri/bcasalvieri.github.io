@@ -10,14 +10,29 @@ body {
 }
 
 .page-wrapper {
-  width: 95%;
+  width: 90%;
   max-width: 1700px;
   margin: 0 auto;
 }
 
-#left-column,
-#right-column {
+#name,
+#about {
   min-height: 100vh;
+}
+
+#name {
+  position: fixed;
+  top: 30%;
+  font-family: 'Bree Serif', serif;
+}
+
+#about {
+  position: relative;
+  top: 100vh;
+  text-align: justify;
+  padding-bottom: 20vh;
+  background-image: url(../images/ep_naturalblack.png);
+  background-attachment: fixed;
 }
 
 h1 {
@@ -35,24 +50,6 @@ h2 {
 p {
   font-size: 4vw;
   line-height: 1.7;
-}
-
-.row {
-  margin-bottom: 0;
-}
-
-.name {
-  position: fixed;
-  font-family: 'Patua One', cursive;
-}
-
-.about {
-  position: relative;
-  top: 100vh;
-  text-align: justify;
-  padding-bottom: 20vh;
-  background-image: url(../images/ep_naturalblack.png);
-  background-attachment: fixed;
 }
 
 .icons {
@@ -86,11 +83,6 @@ img {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  .page-wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
-
   h1 {
     font-size: 7.8vw;
   }
@@ -119,12 +111,12 @@ img {
   }
   
   .page-wrapper {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
   }
 
   h1 {
-    font-size: 7.8vw;
+    font-size: 7.6vw;
   }
 
   img {
