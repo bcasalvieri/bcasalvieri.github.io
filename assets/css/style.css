@@ -43,12 +43,17 @@ h1 {
 }
 
 h2 {
-  font-size: 6vw;
+  font-size: 5.5vw;
   line-height: 1.5;
 }
 
-p, ol li {
-  font-size: 4vw;
+p {
+  font-size: 3.5vw;
+  line-height: 2.0;
+}
+
+ol li {
+  font-size: 3.2vw;
   line-height: 2.0;
 }
 
@@ -95,8 +100,12 @@ img {
     font-size: 3.5vw;
   }
 
-  p, ol li {
+  p {
     font-size: 2.2vw;
+  }
+
+  ol li {
+    font-size: 2vw;
   }
 
   #lang-icons li i {
@@ -127,8 +136,12 @@ img {
     font-size: 2.3vw;
   }
 
-  p, ol li {
+  p {
     font-size: 1.25vw;
+  }
+
+  ol li {
+    font-size: 1.1vw;
   }
 
   #lang-icons li i {
