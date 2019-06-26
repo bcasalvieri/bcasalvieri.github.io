@@ -7,6 +7,11 @@
 .nav-header h1 {
   margin-bottom: 0;
   text-transform: uppercase;
+  font-size: 2rem;
+}
+.nav-header-subtitle {
+  color: var(--primaryColor);
+  margin-left: 10px;
 }
 .logo-btn {
   background: transparent;

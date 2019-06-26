@@ -16,7 +16,10 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <h1>brad casalvieri</h1>
+          <h1>
+            <span>brad</span>
+            <span className={styles.navHeaderSubtitle}>casalvieri</span>
+          </h1>
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaAlignRight className={styles.logoIcon} />
           </button>
