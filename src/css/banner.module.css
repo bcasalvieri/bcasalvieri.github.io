@@ -9,31 +9,19 @@
 .banner div {
   text-align: center;
 }
-.banner-typed,
-.typed-cursor {
-  font-size: 1rem;
+.banner span {
+  font-size: 2rem;
 }
-.banner-typed {
+.banner span {
   white-space: pre;
 }
-.color {
-  color: var(--primaryColor);
-}
 @media screen and (min-width: 556px) {
-  .banner span,
-  .typed-cursor {
-    font-size: 2.5rem;
+  .banner span {
+    font-size: 4rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .banner span,
-  .typed-cursor {
-    font-size: 3rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .banner span,
-  .typed-cursor {
-    font-size: 4rem;
+  .banner span {
+    font-size: 5rem;
   }
 }
