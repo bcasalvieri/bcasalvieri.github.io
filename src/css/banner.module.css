@@ -1,16 +1,36 @@
 .banner {
-  min-height: calc(100vh - 76px);
+  position: relative;
+  top: 76px;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .banner span,
 .typed-cursor {
-  font-size: 5rem;
+  font-size: 1rem;
 }
 .banner span {
   white-space: pre;
 }
 .color {
   color: var(--primaryColor);
+}
+@media screen and (min-width: 556px) {
+  .banner span,
+  .typed-cursor {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner span,
+  .typed-cursor {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner span,
+  .typed-cursor {
+    font-size: 4rem;
+  }
 }
