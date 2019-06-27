@@ -1,0 +1,16 @@
+.banner {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner span,
+.typed-cursor {
+  font-size: 5rem;
+}
+.banner span {
+  white-space: pre;
+}
+.color {
+  color: var(--primaryColor);
+}
