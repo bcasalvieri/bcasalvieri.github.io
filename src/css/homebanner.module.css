@@ -1,0 +1,27 @@
+.banner {
+  min-height: calc(100vh - 76.8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaryColor);
+}
+.banner div {
+  text-align: center;
+}
+.banner span {
+  font-size: 2rem;
+  color: var(--mainWhite);
+}
+.banner span {
+  white-space: pre;
+}
+@media screen and (min-width: 556px) {
+  .banner span {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner span {
+    font-size: 5rem;
+  }
+}

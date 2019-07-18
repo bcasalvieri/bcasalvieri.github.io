@@ -1,27 +1,25 @@
 .banner {
-  min-height: calc(100vh - 76.8px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primaryColor);
-}
-.banner div {
   text-align: center;
-}
-.banner span {
-  font-size: 2rem;
+  letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
 }
-.banner span {
-  white-space: pre;
+.banner h1 {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  letter-spacing: 6px;
 }
-@media screen and (min-width: 556px) {
-  .banner span {
-    font-size: 4rem;
+.banner p {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .banner h1 {
+    font-size: 4.5rem;
   }
-}
-@media screen and (min-width: 992px) {
-  .banner span {
-    font-size: 5rem;
+  .banner p {
+    width: 70%;
   }
 }

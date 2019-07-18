@@ -1,9 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Banner from "../components/Banner"
+import HomeBanner from "../components/Home/HomeBanner"
+import About from "../components/Home/About"
+import FeaturedWork from "../components/Home/FeaturedWork"
 
 export default () => (
   <Layout>
-    <Banner />
+    <HomeBanner />
+    <About />
+    <FeaturedWork />
   </Layout>
 )
