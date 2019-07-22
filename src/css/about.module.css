@@ -21,6 +21,7 @@
 }
 .about-img div {
   box-shadow: var(--lightShadow);
+  max-height: 500px;
 }
 .about-info h4 {
   font-size: 1.9rem;
