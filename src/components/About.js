@@ -26,6 +26,7 @@ const About = () => {
             addiction and I believe laughter is the best medicine.
           </p>
         </article>
+        <a className={styles.aboutLink} href="https://drive.google.com/open?id=1FH7dhzyjDj-lxgU5UJOLUagqBlAsiRQ4" target="_blank">RESUME</a>
       </div>
     </section>
   )
