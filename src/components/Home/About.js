@@ -37,7 +37,7 @@ const About = () => {
           <p>
             I’m a UX-Focused, JavaScript Web Developer who is passionate about creating beautiful and meaningful websites and applications.
           </p>
-          <p>I am a graduate of the Rutgers Coding Bootcamp, an avid football fan, and enjoy laughing at myself.</p>
+          <p>I am a graduate of the Rutgers Coding Bootcamp, an avid football fan, and coffeeholic.</p>
           <AniLink fade to='/about' className="btn-primary">
             learn more
           </AniLink>

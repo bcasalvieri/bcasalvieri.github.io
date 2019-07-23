@@ -1,0 +1,35 @@
+.about {
+  padding: 4rem 0;
+}
+.about-center {
+  width: 80vw;
+  margin: 0 auto;
+}
+.about-info {
+  margin-top: 3rem;
+}
+.about-info h4 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+}
+.about-link {
+  font-weight: bold;
+  color: var(--primaryColor)
+}
+
+@media screen and (min-width: 768px) {
+  .about-center {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  .about-info {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-center {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}
