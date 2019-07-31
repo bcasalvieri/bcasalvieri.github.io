@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
-// import Hero from "../components/Hero"
+import Hero from "../components/Hero"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects/Projects"
 
-const portfolio = ({ data }) => {
+const projects = ({ data }) => {
   return (
     <Layout>
-      {/* <Hero img={data.connectBcg.childImageSharp.fluid} /> */}
+      <Hero img={data.portfolioBcg.childImageSharp.fluid} />
       <Projects />
     </Layout>
   )
@@ -15,7 +15,7 @@ const portfolio = ({ data }) => {
 
 export const query = graphql`
   query projectsImage {
-    connectBcg: file(relativePath: { eq: "connectBcg.jpeg" }) {
+    portfolioBcg: file(relativePath: { eq: "portfolioBcg.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -25,4 +25,4 @@ export const query = graphql`
   }
 `
 
-export default portfolio
+export default projects
