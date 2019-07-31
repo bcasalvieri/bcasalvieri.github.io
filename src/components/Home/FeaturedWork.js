@@ -41,7 +41,7 @@ const FeaturedWork = () => {
           return <Project key={node.contentful_id} project={node} />
         })}
       </div>
-      <AniLink fade to='/portfolio' className="btn-primary">
+      <AniLink fade to='/projects' className="btn-primary">
         all projects
       </AniLink>
     </section>

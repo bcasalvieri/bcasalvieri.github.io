@@ -10,7 +10,7 @@ const Project = ({ project }) => {
     <article className={styles.project}>
       <div className={styles.imgContainer}>
         <Img fluid={image.fluid} className={styles.img} alt="single project" />
-        <AniLink fade className={styles.link} to={`/project/${slug}`}>
+        <AniLink fade className={styles.link} to={`/projects/${slug}`}>
           details
         </AniLink>
       </div>
