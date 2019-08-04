@@ -1,6 +1,6 @@
 import React from "react"
-import Title from "./Title"
-import styles from "../css/aboutme.module.css"
+import Title from "../Title"
+import styles from "../../css/aboutme.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const About = () => {
