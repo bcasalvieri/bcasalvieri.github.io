@@ -7,7 +7,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const getAbout = graphql`
   query aboutImg {
-    aboutImage: file(relativePath: { eq: "500.jpeg" }) {
+    aboutImage: file(relativePath: { eq: "DSC_1940.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid_tracedSVG

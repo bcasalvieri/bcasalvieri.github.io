@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Hero from "../components/Hero"
 import About from "../components/About"
-import {graphql} from "gatsby"
+import { graphql } from "gatsby"
 
 const about = ({data}) => {
   return (
@@ -15,7 +15,7 @@ const about = ({data}) => {
 
 export const query = graphql`
   query {
-    aboutBcg: file(relativePath: { eq: "placeholder-image-wide.png" }) {
+    aboutBcg: file(relativePath: { eq: "DSC_1991.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_tracedSVG
