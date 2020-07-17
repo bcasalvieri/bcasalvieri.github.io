@@ -3,7 +3,7 @@ import styles from "../../css/about.module.css"
 import Title from "../Title"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const getAbout = graphql`
   query aboutImg {
@@ -33,12 +33,16 @@ const About = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>I'm a JavaScript Web Developer</h4>
+          <h4>I'm a Software Engineer</h4>
           <p>
-            I’m a UX-Focused, JavaScript Web Developer who is passionate about creating beautiful and meaningful websites and applications.
+            I'm a Software Engineer who is passionate about creating beautiful
+            and meaningful websites and applications in the ReactJS ecosystem.
           </p>
-          <p>I am a graduate of the Rutgers Coding Bootcamp, an avid football fan, and coffeeholic.</p>
-          <AniLink fade to='/about' className="btn-primary">
+          <p>
+            I am a graduate of the Rutgers Coding Bootcamp, an avid football
+            fan, and coffeeholic.
+          </p>
+          <AniLink fade to="/about" className="btn-primary">
             learn more
           </AniLink>
         </article>
