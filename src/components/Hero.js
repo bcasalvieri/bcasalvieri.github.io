@@ -1,13 +1,11 @@
-import React from "react"
-import BackgroundImage from "gatsby-background-image"
-import styles from "../css/hero.module.css"
+import React from 'react';
+import BackgroundImage from 'gatsby-background-image';
+import styles from '../css/hero.module.css';
 
-const Hero = ({ img, children }) => {
-  return (
-    <BackgroundImage className={styles.hero} fluid={img}>
-      {children}
-    </BackgroundImage>
-  )
-}
+const Hero = ({ img, children }) => (
+  <BackgroundImage className={styles.hero} fluid={img}>
+    {children}
+  </BackgroundImage>
+);
 
-export default Hero
+export default Hero;

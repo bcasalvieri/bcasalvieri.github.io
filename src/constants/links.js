@@ -1,14 +1,14 @@
 export default [
   {
     path: '/about',
-    text: 'about'
+    text: 'about',
   },
   {
     path: '/projects',
-    text: 'projects'
+    text: 'projects',
   },
   {
     path: '/contact',
-    text: 'contact'
-  }
-]
+    text: 'contact',
+  },
+];

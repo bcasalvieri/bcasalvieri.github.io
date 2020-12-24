@@ -1,17 +1,19 @@
-import React from 'react'
-import Layout from '../components/Layout'
-import Hero from "../components/Hero"
-import About from "../components/About/About"
-import { graphql } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import Hero from '../components/Hero';
+import About from '../components/About/About';
+import SEO from '../components/SEO';
 
-const about = ({data}) => {
-  return (
+const about = ({ data }) => (
+  <>
+    <SEO title="About" />
     <Layout>
       <Hero img={data.aboutBcg.childImageSharp.fluid} />
       <About />
     </Layout>
-  )
-}
+  </>
+);
 
 export const query = graphql`
   query {
@@ -23,6 +25,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default about
+export default about;

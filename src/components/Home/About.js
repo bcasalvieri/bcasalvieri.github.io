@@ -1,9 +1,9 @@
-import React from "react"
-import styles from "../../css/about.module.css"
-import Title from "../Title"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import React from 'react';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import styles from '../../css/about.module.css';
+import Title from '../Title';
 
 const getAbout = graphql`
   query aboutImg {
@@ -15,10 +15,10 @@ const getAbout = graphql`
       }
     }
   }
-`
+`;
 
 const About = () => {
-  const { aboutImage } = useStaticQuery(getAbout)
+  const { aboutImage } = useStaticQuery(getAbout);
 
   return (
     <section className={styles.about}>
@@ -48,7 +48,7 @@ const About = () => {
         </article>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,9 +1,9 @@
-import React from "react"
-import Title from "../Title"
-import styles from "../../css/aboutme.module.css"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import React from 'react';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import Title from '../Title';
+import styles from '../../css/aboutme.module.css';
 
-const About = () => {
+export default function About() {
   return (
     <section className={styles.about}>
       <Title title="about" subtitle="me" />
@@ -57,7 +57,7 @@ const About = () => {
           <p>
             <AniLink className={styles.aboutLink} fade to="/contact">
               CONTACT ME
-            </AniLink>{" "}
+            </AniLink>{' '}
             for project inquiries and availability!
           </p>
           <p>
@@ -70,13 +70,10 @@ const About = () => {
           className={styles.aboutLink}
           href="https://drive.google.com/file/d/1zs9-iJJUiIqdaCH9s0Dc-p8kayVQKAqu/view?usp=sharing"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           RESUME
         </a>
       </div>
     </section>
-  )
+  );
 }
-
-export default About

@@ -1,10 +1,10 @@
-import React from "react"
-import Img from "gatsby-image"
-import styles from "../../css/project.module.css"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import React from 'react';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import Img from 'gatsby-image';
+import styles from '../../css/project.module.css';
 
 const Project = ({ project }) => {
-  const { name, slug, image } = project
+  const { name, slug, image } = project;
 
   return (
     <article className={styles.project}>
@@ -18,7 +18,7 @@ const Project = ({ project }) => {
         <h3>{name}</h3>
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

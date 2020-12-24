@@ -1,15 +1,14 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`, // or '.env'
-})
+});
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: 'Brad Casalvieri',
+    siteUrl: 'https://bradmichael.dev',
+    description: `Brad Casalvieri's portfolio site.`,
+  },
   plugins: [
     `gatsby-plugin-transition-link`,
     {
@@ -29,4 +28,4 @@ module.exports = {
       },
     },
   ],
-}
+};

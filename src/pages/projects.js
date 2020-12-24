@@ -1,17 +1,22 @@
-import React from "react"
-import Layout from "../components/Layout"
-import Hero from "../components/Hero"
-import { graphql } from "gatsby"
-import Projects from "../components/Projects/Projects"
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import Hero from '../components/Hero';
+import SEO from '../components/SEO';
+import ProjectList from '../components/Projects/ProjectList';
 
 const projects = ({ data }) => {
+  const { portfolioBcg, projects } = data;
   return (
-    <Layout>
-      <Hero img={data.portfolioBcg.childImageSharp.fluid} />
-      <Projects />
-    </Layout>
-  )
-}
+    <>
+      <SEO title="Projects" />
+      <Layout>
+        <Hero img={portfolioBcg.childImageSharp.fluid} />
+        <ProjectList projects={projects} />
+      </Layout>
+    </>
+  );
+};
 
 export const query = graphql`
   query projectsImage {
@@ -22,7 +27,24 @@ export const query = graphql`
         }
       }
     }
+    projects: allContentfulProjects {
+      edges {
+        node {
+          name
+          slug
+          url
+          githubUrl
+          description
+          contentful_id
+          image {
+            fluid {
+              ...GatsbyContentfulFluid
+            }
+          }
+        }
+      }
+    }
   }
-`
+`;
 
-export default projects
+export default projects;

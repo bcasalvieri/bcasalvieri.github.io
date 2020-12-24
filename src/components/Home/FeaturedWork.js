@@ -1,13 +1,15 @@
-import React from 'react'
-import Project from '../Projects/Project'
-import { useStaticQuery, graphql } from 'gatsby'
-import Title from '../Title'
-import styles from '../../css/items.module.css'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import React from 'react';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { useStaticQuery, graphql } from 'gatsby';
+import Project from '../Projects/Project';
+import Title from '../Title';
+import styles from '../../css/items.module.css';
 
 const getFeaturedProjects = graphql`
   query {
-    featuredProjects: allContentfulProjects(filter: {featured: {eq: true}}) {
+    featuredProjects: allContentfulProjects(
+      filter: { featured: { eq: true } }
+    ) {
       edges {
         node {
           name
@@ -26,26 +28,25 @@ const getFeaturedProjects = graphql`
       }
     }
   }
-`
-
+`;
 
 const FeaturedWork = () => {
-  const { featuredProjects } = useStaticQuery(getFeaturedProjects)
-  const projects = featuredProjects.edges
+  const { featuredProjects } = useStaticQuery(getFeaturedProjects);
+  const projects = featuredProjects.edges;
 
   return (
     <section className={styles.projects}>
-      <Title title='featured' subtitle='projects' />
+      <Title title="featured" subtitle="projects" />
       <div className={styles.center}>
-        {projects.map(({ node }) => {
-          return <Project key={node.contentful_id} project={node} />
-        })}
+        {projects.map(({ node }) => (
+          <Project key={node.contentful_id} project={node} />
+        ))}
       </div>
-      <AniLink fade to='/projects' className="btn-primary">
+      <AniLink fade to="/projects" className="btn-primary">
         all projects
       </AniLink>
     </section>
-  )
-}
+  );
+};
 
-export default FeaturedWork
+export default FeaturedWork;

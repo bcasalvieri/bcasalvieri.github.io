@@ -1,17 +1,19 @@
-import React from "react"
-import Layout from "../components/Layout"
-import Contact from "../components/Contact"
-import Hero from "../components/Hero"
-import { graphql } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import Contact from '../components/Contact';
+import Hero from '../components/Hero';
+import SEO from '../components/SEO';
 
-const contact = ({ data }) => {
-  return (
+const contact = ({ data }) => (
+  <>
+    <SEO title="Contact Me" />
     <Layout>
       <Hero img={data.connectBcg.childImageSharp.fluid} />
       <Contact />
     </Layout>
-  )
-}
+  </>
+);
 
 export const query = graphql`
   query {
@@ -23,6 +25,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default contact
+export default contact;

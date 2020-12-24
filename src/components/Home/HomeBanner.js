@@ -1,6 +1,6 @@
-import React, { Component } from "react"
-import Typed from "typed.js"
-import styles from "../../css/homebanner.module.css"
+import React, { Component } from 'react';
+import Typed from 'typed.js';
+import styles from '../../css/homebanner.module.css';
 
 export default class HomeBanner extends Component {
   componentDidMount() {
@@ -9,19 +9,20 @@ export default class HomeBanner extends Component {
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
-    })
+    });
   }
+
   render() {
     return (
       <div className={styles.banner}>
         <div>
           <span
-            ref={el => {
-              this.el = el
+            ref={(el) => {
+              this.el = el;
             }}
           />
         </div>
       </div>
-    )
+    );
   }
 }
