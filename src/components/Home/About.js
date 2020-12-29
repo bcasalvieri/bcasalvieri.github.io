@@ -34,8 +34,9 @@ const About = () => {
         <article className={styles.aboutInfo}>
           <h4>I'm a Software Engineer</h4>
           <p>
-            I'm a Software Engineer who is passionate about creating beautiful
-            and meaningful websites and applications in the ReactJS ecosystem.
+            I'm a full stack developer from New Jersey who is passionate about
+            creating beautiful and meaningful websites and applications in the
+            ReactJS ecosystem.
           </p>
           <p>
             I am a graduate of the Rutgers Coding Bootcamp, an avid football

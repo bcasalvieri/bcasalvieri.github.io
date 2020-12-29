@@ -5,7 +5,10 @@ import styles from '../../css/homebanner.module.css';
 export default class HomeBanner extends Component {
   componentDidMount() {
     this.typed = new Typed(this.el, {
-      strings: ["Hi! I'm Brad.^1000", "I'm a Software\n Engineer.^1000"],
+      strings: [
+        "Hey, I'm Brad.^1000",
+        "I'm a Full Stack\n JavaScript developer.^1000",
+      ],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
