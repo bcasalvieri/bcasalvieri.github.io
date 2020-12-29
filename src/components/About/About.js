@@ -9,7 +9,7 @@ export default function About() {
       <div className={styles.aboutCenter}>
         <article className={styles.aboutInfo}>
           <h2>The skinny...</h2>
-          <p>I was bit by the coding bug 🕷 in 2017.</p>
+          <p>I was bit by the coding bug in 2017.</p>
           <p>
             While creating a website on Wix, I became curious about how websites
             were really built under the hood using actual programming languages.

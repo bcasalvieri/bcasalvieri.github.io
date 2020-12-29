@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>I'm a Software Engineer</h4>
+          <h4>I'm a JavaScript Developer</h4>
           <p>
             I'm a full stack developer from New Jersey who is passionate about
             creating beautiful and meaningful websites and applications in the
