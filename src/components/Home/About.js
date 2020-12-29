@@ -1,6 +1,5 @@
 import React from 'react';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import styles from '../../css/about.module.css';
 import Title from '../Title';
@@ -42,9 +41,9 @@ const About = () => {
             I am a graduate of the Rutgers Coding Bootcamp, an avid football
             fan, and coffeeholic.
           </p>
-          <AniLink fade to="/about" className="btn-primary">
+          <Link to="/about" className="btn-primary">
             learn more
-          </AniLink>
+          </Link>
         </article>
       </div>
     </section>

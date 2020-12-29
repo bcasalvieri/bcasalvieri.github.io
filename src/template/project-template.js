@@ -1,6 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import AniLink from 'gatsby-plugin-transition-link';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { FaGithub } from 'react-icons/fa';
 import { MdComputer } from 'react-icons/md';
@@ -46,9 +45,9 @@ const projectTemplate = ({ data }) => {
             <p className={styles.desc}>
               <strong>Description:</strong> {description}
             </p>
-            <AniLink fade to="/projects" className="btn-primary">
+            <Link fade to="/projects" className="btn-primary">
               back to projects
-            </AniLink>
+            </Link>
           </div>
         </section>
       </Layout>

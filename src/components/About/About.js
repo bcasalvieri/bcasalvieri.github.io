@@ -1,5 +1,5 @@
 import React from 'react';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { Link } from 'gatsby';
 import Title from '../Title';
 import styles from '../../css/aboutme.module.css';
 
@@ -55,9 +55,9 @@ export default function About() {
             incorporating new languages, libraries, frameworks, and principles.
           </p>
           <p>
-            <AniLink className={styles.aboutLink} fade to="/contact">
+            <Link className={styles.aboutLink} to="/contact">
               CONTACT ME
-            </AniLink>{' '}
+            </Link>{' '}
             for project inquiries and availability!
           </p>
           <p>
