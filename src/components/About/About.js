@@ -34,16 +34,16 @@ export default function About() {
           <p>
             <strong>I live in New Jersey.</strong> Most people consider it the
             armpit of America, but I call it home. Contrary to popular belief,
-            it's called the Garden State for a reason...
+            it's called the Garden State for a reason.
           </p>
           <p>
             <strong>I love football 🏈.</strong> I played football for 13 years,
-            including in college at the University of Delaware. Also, I've been
-            bred to be a Florida State Seminole since birth. #GoNoles
-            #GoBlueHens
+            including at the University of Delaware. Also, I've been bred to be
+            a Florida State Seminole since birth. #GoNoles #GoBlueHens
           </p>
           <p>
-            <strong>I am a coffeeholic ☕.</strong> I strongly recommend{' '}
+            <strong>I am a coffeeholic ☕.</strong> There's nothing better than
+            a great cup of coffee or espresso. I strongly recommend{' '}
             <a
               className={styles.aboutLink}
               href="https://guadaluperoastery.com/"
@@ -56,8 +56,9 @@ export default function About() {
             <strong>When I'm not coding,</strong> I love to play golf 🏌️‍♂️. I like
             to think I'm a good golfer, and it gives me a place to channel my
             competitive nature. I enjoy reading a good book 📖 (I'm open to
-            recommendations!) or binging Netflix (Schitt's Creek anyone). I am
-            passionate about my Catholic faith and studying the Bible.
+            recommendations!) or binging shows on Netflix (Schitt's Creek
+            anyone), Hulu, or Prime Video. I am passionate about my Catholic
+            faith and studying the Bible.
           </p>
         </article>
       </div>
