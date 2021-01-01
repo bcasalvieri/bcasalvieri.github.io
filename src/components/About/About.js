@@ -17,7 +17,7 @@ export default function About() {
             JavaScript. Since then, I haven’t been able to get enough as I’ve
             expanded my knowledge into front end frameworks and libraries
             (React.js, Gatsby, and Next.js), back end development (Node.js and
-            Express), databases, and cloud computing (AWS).
+            Express), databases, and cloud computing (Amazon Web Services).
           </p>
           <p>
             Currently, I'm exploring GraphQL and Apollo as an alternative to

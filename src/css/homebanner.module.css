@@ -6,22 +6,55 @@
   background-color: var(--primaryColor);
 }
 .banner div {
-  text-align: center;
+  padding: 0 5vw;
+}
+.banner h1,
+h2,
+h3 {
+  color: var(--mainWhite);
+  font-family: 'Lato', sans-serif;
+}
+.banner h1 {
+  font-size: 2.5rem;
+}
+.banner h2 {
+  font-size: 1.5rem;
+}
+.banner h3 {
+  font-size: 1rem;
 }
 .banner span {
-  font-size: 2rem;
-  color: var(--mainWhite);
+  font-size: 1rem;
+  color: var(--mainBlack);
 }
 .banner span {
   white-space: pre;
 }
 @media screen and (min-width: 556px) {
-  .banner span {
-    font-size: 4rem;
+  .banner h1 {
+    font-size: 4.5rem;
   }
+  .banner h2 {
+    font-size: 2.5rem;
+  }
+  /* .banner h3 {
+    font-size: 1.5rem;
+  }
+  .banner span {
+    font-size: 2rem;
+  } */
 }
 @media screen and (min-width: 992px) {
-  .banner span {
+  .banner h1 {
     font-size: 5rem;
+  }
+  .banner h2 {
+    font-size: 3rem;
+  }
+  .banner h3 {
+    font-size: 2rem;
+  }
+  .banner span {
+    font-size: 2rem;
   }
 }

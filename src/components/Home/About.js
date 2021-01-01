@@ -3,7 +3,6 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import styles from '../../css/about.module.css';
 import Title from '../Title';
-import Languages from './Languages';
 
 const getAbout = graphql`
   query aboutImg {
@@ -36,8 +35,8 @@ const About = () => {
           <h4>I'm a JavaScript Developer</h4>
           <p>
             I'm a full stack developer from New Jersey who is passionate about
-            creating beautiful and meaningful websites and applications using{' '}
-            {<Languages />}
+            creating beautiful and meaningful websites and applications in the
+            React.js ecosystem.
           </p>
           <p>
             I am a graduate of the Rutgers Coding Bootcamp, an avid football
