@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import styles from '../../css/about.module.css';
 import Title from '../Title';
+import Languages from './Languages';
 
 const getAbout = graphql`
   query aboutImg {
@@ -21,13 +22,13 @@ const About = () => {
 
   return (
     <section className={styles.about}>
-      <Title title="about" subtitle="me" />
+      <Title title='about' subtitle='me' />
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainer}>
             <Img
               fluid={aboutImage.childImageSharp.fluid}
-              alt="placeholder image"
+              alt='placeholder image'
             />
           </div>
         </article>
@@ -35,14 +36,14 @@ const About = () => {
           <h4>I'm a JavaScript Developer</h4>
           <p>
             I'm a full stack developer from New Jersey who is passionate about
-            creating beautiful and meaningful websites and applications in the
-            ReactJS ecosystem.
+            creating beautiful and meaningful websites and applications using{' '}
+            {<Languages />}
           </p>
           <p>
             I am a graduate of the Rutgers Coding Bootcamp, an avid football
             fan, and coffeeholic.
           </p>
-          <Link to="/about" className="btn-primary">
+          <Link to='/about' className='btn-primary'>
             learn more
           </Link>
         </article>

@@ -5,7 +5,7 @@ import styles from '../../css/aboutme.module.css';
 export default function About() {
   return (
     <section className={styles.about}>
-      <Title title="about" subtitle="me" />
+      <Title title='about' subtitle='me' />
       <div className={styles.aboutCenter}>
         <article className={styles.aboutInfo}>
           <h2>The skinny...</h2>
@@ -20,15 +20,9 @@ export default function About() {
             Express), databases, and cloud computing (AWS).
           </p>
           <p>
-            Here's my{' '}
-            <a
-              className={styles.aboutLink}
-              href="https://drive.google.com/file/d/1zs9-iJJUiIqdaCH9s0Dc-p8kayVQKAqu/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer">
-              resume
-            </a>
-            .
+            Currently, I'm exploring GraphQL and Apollo as an alternative to
+            REST APIs, learning TypeScript, and getting more familiar with
+            Next.js.
           </p>
           <h2>A little more...</h2>
           <p>
@@ -46,8 +40,9 @@ export default function About() {
             a great cup of coffee or espresso. I strongly recommend{' '}
             <a
               className={styles.aboutLink}
-              href="https://guadaluperoastery.com/"
-              target="_blank">
+              href='https://guadaluperoastery.com/'
+              target='_blank'
+              rel='noreferrer'>
               Guadalupe Roastery
             </a>{' '}
             for all your coffee beans needs.

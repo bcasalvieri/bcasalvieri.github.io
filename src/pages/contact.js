@@ -1,13 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
-import Contact from '../components/Contact';
+import Contact from '../components/Contact/Contact';
 import Hero from '../components/Hero';
 import SEO from '../components/SEO';
 
 const contact = ({ data }) => (
   <>
-    <SEO title="Contact Me" />
+    <SEO title='Contact Me' />
     <Layout>
       <Hero img={data.connectBcg.childImageSharp.fluid} />
       <Contact />
